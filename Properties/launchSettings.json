@@ -1,0 +1,45 @@
+﻿
+{ // Täällä määritellään projektin käynnistysasetukset eri ympäristöissä
+
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": { // sisältää asetuksia, jotka liittyvät IIS (Internet Information Services) -palvelimeen
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:53616",
+      "sslPort": 44395
+    }
+  },
+  "profiles": { // Tämä objekti määrittää erilaisia käynnistysprofiileja, joista jokainen edustaa eri tapaa käynnistää projekti
+    "http": { // Täällä määritellään sovelluksen käynnistymisen HTTP-yhteyden kautta
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:5124",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+     // sovellusympäristö Development, mikä mahdollistaa kehityksessä hyödylliset toiminnot (esim. yksityiskohtaiset virheilmoitukset)
+      }
+    },
+    "https": { // Täällä määritellään sovelluksen käynnistymisen HTTPS-yhteyden kautta
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:7027;http://localhost:5124",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+
+      }
+    },
+    "IIS Express": { // Tämä profiili käynnistää sovelluksen IIS Express -palvelimella
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
