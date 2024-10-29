@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|c:\\users\\tonoppa\\source\\repos\\backend_lakerol\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|c:\\users\\tonoppa\\source\\repos\\backend_lakerol\\models\\tuote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|solutionrelative:models\\tuote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|c:\\users\\tonoppa\\source\\repos\\backend_lakerol\\controllers\\tuotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|solutionrelative:controllers\\tuotecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|c:\\users\\tonoppa\\source\\repos\\backend_lakerol\\models\\kayttaja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|solutionrelative:models\\kayttaja.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|c:\\users\\tonoppa\\source\\repos\\backend_lakerol\\controllers\\kayttajacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|solutionrelative:controllers\\kayttajacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|c:\\users\\tonoppa\\source\\repos\\backend_lakerol\\models\\tuote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B424FF84-50E9-422E-ACFE-B57BF716D173}|backend_Lakerol.csproj|solutionrelative:models\\tuote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,53 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-28T22:07:55.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KayttajaController.cs",
-              "DocumentMoniker": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\Controllers\\KayttajaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\KayttajaController.cs",
-              "ToolTip": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\Controllers\\KayttajaController.cs",
-              "RelativeToolTip": "Controllers\\KayttajaController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T22:01:04.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Kayttaja.cs",
-              "DocumentMoniker": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\Models\\Kayttaja.cs",
-              "RelativeDocumentMoniker": "Models\\Kayttaja.cs",
-              "ToolTip": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\Models\\Kayttaja.cs",
-              "RelativeToolTip": "Models\\Kayttaja.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T22:00:12.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Tuote.cs",
               "DocumentMoniker": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\Models\\Tuote.cs",
               "RelativeDocumentMoniker": "Models\\Tuote.cs",
               "ToolTip": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\Models\\Tuote.cs",
               "RelativeToolTip": "Models\\Tuote.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAABmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T22:00:04.833Z",
+              "WhenOpened": "2024-10-29T20:20:13.646Z",
               "EditorCaption": ""
             },
             {
@@ -92,9 +41,9 @@
               "RelativeDocumentMoniker": "Controllers\\TuoteController.cs",
               "ToolTip": "C:\\Users\\Tonoppa\\source\\repos\\backend_Lakerol\\Controllers\\TuoteController.cs",
               "RelativeToolTip": "Controllers\\TuoteController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABAAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwD4AAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T20:07:25.851Z",
+              "WhenOpened": "2024-10-29T20:17:14.702Z",
               "EditorCaption": ""
             }
           ]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("backend_Lakerol")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cda78dc95f65e7fa6975b47935ee44fd48aa59ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("backend_Lakerol")]
 [assembly: System.Reflection.AssemblyTitleAttribute("backend_Lakerol")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,6 +4,7 @@ using System.Data;
 using MySql.Data.MySqlClient;
 using backend_Lakerol.Models; // Tuote.cs:ssä sijaitsevat luokat
 using Google.Protobuf.WellKnownTypes;
+using System.Text;
 
 namespace backend_Lakerol.Controllers
 {
@@ -26,7 +27,7 @@ namespace backend_Lakerol.Controllers
             // Kysely, joka käsittelee käyttäjän tuotehakua
             string kysely = @"
                             SELECT tuote_id, tuote_nimi, tuote_paino, energiamaara, tuote_kuvaus, tuote_kuva 
-                            FROM TUOTE
+                            FROM Tuote
                             WHERE (@searchTerm IS NULL 
                             OR CAST(tuote_id AS CHAR) LIKE CONCAT('%', @searchTerm, '%')
                             OR tuote_nimi LIKE CONCAT('%', @searchTerm, '%'))
@@ -55,8 +56,14 @@ namespace backend_Lakerol.Controllers
                                 Tuote_Paino = myReader.GetString(2),
                                 EnergiaMaara = myReader.GetString(3),
                                 Tuote_Kuvaus = myReader.GetString(4),
-                                Tuote_Kuva = null // Alustetaan tyhjällä, jos kenttä on NULL
+                                Tuote_Kuva_Url = myReader.IsDBNull(5) ? null : myReader.GetString(5) // Hae URL-osoite suoraan
                             };
+
+                            // Käytetään GetKuvaBase64-metodia, jos tarvetta
+                            // tuote.Tuote_Kuva_Base64 = tuote.GetKuvaBase64();
+
+                            /* Tässä noudetaan paikallisessa yhteydessä kuva
+
                             if (!myReader.IsDBNull(5)) // Tarkista, onko tuote_kuva-kenttä tyhjä
                             {
                                 using (var memoryStream = new MemoryStream())
@@ -66,7 +73,8 @@ namespace backend_Lakerol.Controllers
                             // Kutsutaan MemoryStream-olion ToArray-metodia, joka muuntaa streamissä olevan datan byte-taulukoksi
                                     tuote.Tuote_Kuva_Base64 = Convert.ToBase64String(tuote.Tuote_Kuva); // Muunna Base64:ksi
                                 }
-                            }
+                            } */
+
                             tuotteet.Add(tuote);
                         }
                     }
