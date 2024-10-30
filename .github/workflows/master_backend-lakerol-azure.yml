@@ -21,8 +21,11 @@ jobs:
         with:
           dotnet-version: '8.x'
 
+      - name: Restore dependencies
+        run: dotnet restore ./backend_Lakerol.csproj
+
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build ./backend_Lakerol.csproj --configuration Release
 
       - name: dotnet publish
         run: dotnet publish ./backend_Lakerol.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
