@@ -64,5 +64,5 @@ jobs:
         with:
           app-name: 'backend-lakerol-azure'
           slot-name: 'Production'
-          package: .
+          package: ./${{env.DOTNET_ROOT}}/myapp
           
