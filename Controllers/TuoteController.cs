@@ -86,19 +86,18 @@ namespace backend_Lakerol.Controllers
         [HttpGet("Attribuutit")]
         public ActionResult<List<string>> GetTuoteAttribuutit()
         // Haetaan attribuuttien nimet, jotka näytetään hakusivulla ja niiden pohjalta suoritetaan hakutoiminto
-        {
+        { //                                    muutettu tuote_id:n i pieneksi eli aiemmin oli tuote_Id
             string kysely = @"
                             SELECT CASE
-                            WHEN COLUMN_NAME = 'tuote_Id' THEN 'EAN-koodi'  
+                            WHEN COLUMN_NAME = 'tuote_id' THEN 'EAN-koodi'
                             WHEN COLUMN_NAME = 'tuote_nimi' THEN 'Tuotteen nimi'
                             ELSE COLUMN_NAME 
                             END AS NayttoNimi,
                             COLUMN_NAME AS SarakeNimi
                             FROM INFORMATION_SCHEMA.COLUMNS
                             WHERE TABLE_NAME = 'Tuote'
-                            AND TABLE_SCHEMA = 'lakerol_database'
                             AND COLUMN_NAME NOT IN ('tuote_kuva', 'tuote_kuvaus', 'tuote_paino', 'energiamaara')
-                            ORDER BY FIELD(COLUMN_NAME, 'tuote_nimi', 'tuote_Id');
+                            ORDER BY FIELD(COLUMN_NAME, 'tuote_nimi', 'tuote_id');
                             ";
             // ELSE COLUMN_NAME: Kaikille muille sarakkeille palautetaan niiden alkuperäinen nimi
             // END AS NayttoNimi: Tämä määrittää, että CASE-lausekkeen tulos nimetään NayttoNimi
