@@ -28,7 +28,7 @@ jobs:
         run: dotnet build ./backend_Lakerol.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish ./backend_Lakerol.csproj -c Release -o ./myapp
+        run: dotnet publish ./backend_Lakerol.csproj -c Release -o ""./myapp"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
